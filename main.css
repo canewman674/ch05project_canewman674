@@ -1,0 +1,31 @@
+ .required {
+        border: 2px solid red; /* Or choose another distinct color */
+    }
+    .error-message {
+        color: red;
+        font-size: 0.9em;
+        display: none; /* Hidden by default */
+    }
+    .invalid-field {
+    border: 1px solid red;
+}
+.error-message {
+        color: red;
+        font-size: 0.9em;
+        display: none; /* Hidden by default */
+}
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc; /* A neutral default border */
+    border-radius: 5px;
+}
+input[type="email"]:invalid:not(:placeholder-shown):not(:focus) {
+    border-color: red;
+}
+input[type="email"]:valid {
+    border-color: #ccc; /* Or your desired default color */
+}
+input[type="email"]:focus {
+    border-color: #66afe9; /* Highlight color on focus */
+    outline: none; /* Remove default outline */
+}
